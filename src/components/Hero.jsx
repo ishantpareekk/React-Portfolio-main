@@ -1,5 +1,5 @@
 import { HERO_CONTENT } from "../constants";
-import profilePic from "../assets/Abhi.png";
+import profilePic from "../assets/ishant.JPG"; // Corrected the import path
 import { motion } from "framer-motion";
 
 const container = (delay) => ({
@@ -23,9 +23,8 @@ const Hero = () => {
               animate="visible"
               className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-6xl"
             >
-              <br>
-              </br>
-              Abhishek Yadav
+              <br />
+              Ishant Pareek {/* Replaced the name */}
             </motion.h1>
             <motion.span
               variants={container(0.5)}
@@ -46,13 +45,30 @@ const Hero = () => {
           </div>
         </div>
         <div className="order-1 md:order-2 w-full lg:w-1/2 lg:p-8">
-          <div className="
-           flex justify-center">
-            <motion.img 
-            initial={{x: 100, opacity: 0}}
-            animate={{x: 0, opacity: 1}}
-            transition={{ duration: 1, delay: 1.2}}
-             src={profilePic} alt="Kevin Rush" />
+          <div className="flex justify-center">
+            <motion.img
+              initial={{ x: 100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1, delay: 1.2 }}
+              src={profilePic}
+              alt="Ishant Pareek"
+              style={{
+                maxWidth: "100%", // Ensures the image scales responsively
+                height: "auto",  // Maintains the original aspect ratio
+                objectFit: "cover", // Ensures the image fills the container
+                objectPosition: "center bottom", // Adjusted cropping from below
+              }}
+            />
+          </div>
+          <div className="flex justify-center mt-4">
+            <a
+              href="https://www.linkedin.com/in/ishant-pareek-754a04237/" // Correct LinkedIn URL
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:underline"
+            >
+              Connect on LinkedIn
+            </a>
           </div>
         </div>
       </div>

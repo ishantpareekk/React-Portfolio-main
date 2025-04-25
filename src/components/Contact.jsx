@@ -38,7 +38,7 @@ const Contact = () => {
           className="my-4"
         >
           <a href={`mailto:${CONTACT.email}`} className="text-blue-500">
-            abhishekay2003@gmail.com
+            ishantpareekk@gmail.com
           </a>
           {/* <a href="mailto:abhishekay2003@gmail.com">Email Me</a> */}
 
